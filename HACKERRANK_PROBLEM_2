@@ -1,0 +1,31 @@
+#Given five positive integers, find the minimum and maximum values that can be calculated by summing exactly four of the five integers. 
+#Then print the respective minimum and maximum values as a single line of two space-separated long integers.
+
+
+import math
+import os
+import random
+import re
+import sys
+
+#
+# Complete the 'miniMaxSum' function below.
+#
+# The function accepts INTEGER_ARRAY arr as parameter.
+#
+
+def miniMaxSum(arr3):
+    # Write your code here
+    x=max(arr3)
+    y=min(arr3)
+    
+    sum1=sum(arr3)
+    sum2=sum(arr3)
+    
+    print(sum1-x,sum2-y)
+
+if __name__ == '__main__':
+
+    arr = list(map(int, input().rstrip().split()))
+
+    miniMaxSum(arr)
